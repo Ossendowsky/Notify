@@ -3,9 +3,14 @@ body {
     color: #848484;
 }
 
-section {
-    padding: 60px 60px;
-    overflow: hidden;
+section h2 {
+    font-size: 1.5em;
+    color: #222;
+}
+
+section h3 {
+    font-size: 1.3em;
+    color: #222;
 }
 
 .section__content {
@@ -16,46 +21,33 @@ section {
     margin-bottom: 20px;
 }
 
-.section__content h2 {
-    margin: 10px 0;
-    color: #222222;
-}
-
-.section__content h3 {
-    margin: 10px 0;
-    color: #222222;
-    font-size: 1.3em;
-}
-
 /*Header Styles*/
 
+.green__line {
+    height: 10px;
+    background-color: #2ecc71;
+}
+
 .main__header {
-    height: 65vh;
-    background-image: url(../img/background.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
+    height: 600px;
+    background-image: url(../img/background-new.png);
     background-position: center;
-    overflow: hidden;
+    background-size: cover;
+    background-repeat: no-repeat;
+
 }
 
-.header__caption {
-    margin: 10vh 10vw;
-    display: flex;
-    flex-direction: column;
-    color: #fff;
-}
-
-.header__caption h1 {
+.main__header h1 {
     margin-bottom: 40px;
     font-family: 'Pacifico', sans-serif;
     font-size: 4em;
 }
 
-.header__caption span {
+.main__header span {
     color: #2ecc71;
 }
 
-.header__caption p {
+.main__header p {
     font-size: 1.4em
 }
 
@@ -69,7 +61,8 @@ section {
     border-radius: 50%;
     color: #dbdee0;
     transition: all 0.5s;
-    margin: 0 15px;
+    margin-bottom: 10px;
+
 }
 
 .fab:hover {
@@ -79,37 +72,18 @@ section {
 
 /*Features Styles*/
 
-.features__wrapper {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
 .features__img {
-    text-align: center;
     height: 100px;
     width: 100px;
     line-height: 100px;
     background-color: #2ecc71;
     border-radius: 50%;
-    transition: all 0.5s;
 }
 
 /*Notified styles*/
 
 .notified {
     background-color: #e3e3e3;
-}
-
-.section__content--notified {
-    display: flex;
-    align-items: flex-start;
-    text-align: left;
-    margin-bottom: 0;
-}
-
-.notified__form {
-    padding-left: 0;
 }
 
 .notified__form--input {
@@ -137,12 +111,11 @@ section {
 
 /*Testimonial styles*/
 
-.section__content--img {
-    padding-bottom: 30px;
+.testimonial q {
+    font-style: italic;
 }
 
 .testimonial__socialmedia .fab {
-    text-align: center;
     height: 35px;
     width: 35px;
     line-height: 35px;
@@ -150,7 +123,7 @@ section {
     border-radius: 50%;
     color: #fff;
     transition: all 0.5s;
-    margin: 5px 5px;
+    margin-bottom: 10px
 }
 
 .fab:hover {
@@ -160,15 +133,10 @@ section {
 /*Footer styles*/
 
 .main__footer {
-    height: 10vh;
     background-color: #e3e3e3;
-    display: flex;
-    align-items: center;
 }
 
 .footer__content {
-    display: flex;
-    justify-content: space-between;
     font-size: 0.8em;
 }
 
